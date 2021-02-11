@@ -1,9 +1,7 @@
 @Library('pipeline') _
 import groovy.json.JsonSlurper
 import groovy.json.JsonOutput
-def call() {
-    echo "WHY ARE YOU CALLING THIS FUNCTION!??!"
-}
+
 
 pipeline {
 	agent any
@@ -17,6 +15,9 @@ pipeline {
 			steps {
 				echo '*************************Build Started*************************************'
 				}
+			def call() {
+    echo "WHY ARE YOU CALLING THIS FUNCTION!??!"
+}
 			}
 		}
 }
